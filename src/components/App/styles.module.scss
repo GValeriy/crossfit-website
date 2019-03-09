@@ -1,0 +1,12 @@
+@import '../../styles/global.scss';
+
+.app {
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+    min-width: 320px;
+    position: relative;
+    width: 100%;
+}

@@ -1,0 +1,62 @@
+{
+  "name": "__PROJECT__",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-fetch": "^2.2.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@storybook/addon-actions": "^4.0.10",
+    "@storybook/addon-backgrounds": "^4.1.11",
+    "@storybook/addon-links": "^4.0.10",
+    "@storybook/addons": "^4.0.10",
+    "@storybook/react": "^4.0.10",
+    "babel-loader": "^8.0.4",
+    "check-commit": "^1.0.0",
+    "eslint": "^5.6.0",
+    "husky": "^1.2.0",
+    "node-sass": "^4.9.3",
+    "react-app-rewire-eslint": "^0.2.3",
+    "react-app-rewired": "^1.6.2",
+    "sass-lint": "^1.12.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "check-commit-branch && npm run lint"
+    }
+  },
+  "scripts": {
+    "build": "react-app-rewired build",
+    "build-storybook": "build-storybook -s public",
+    "eject": "react-scripts eject",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "lint:js": "eslint src --fix",
+    "lint:scss": "sass-lint --verbose --no-exit",
+    "start": "react-app-rewired start",
+    "storybook": "start-storybook -p 9009 -s public",
+    "storybook:export": "build-storybook -c .storybook -o .export"
+  },
+  "config": {
+    "checkCommit": {
+      "branch": "^[0-9]+$"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

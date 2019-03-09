@@ -1,0 +1,23 @@
+@import './styles/global.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include bodyText;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    font-stretch: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
