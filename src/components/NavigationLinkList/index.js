@@ -43,7 +43,8 @@ class NavigationLinkList extends PureComponent {
 }
 
 NavigationLinkList.defaultProps = {
-    className: ''
+    className: '',
+    items: []
 }
 
 export default NavigationLinkList;

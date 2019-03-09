@@ -32,7 +32,6 @@ const userData = {
     userRole: 'Sponsor/Requester'
 };
 
-
 class WelcomePage extends Component {
     render() {
         const {

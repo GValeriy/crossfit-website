@@ -7,8 +7,8 @@ const req = require.context('../src', true, /stories.js$/);
 addDecorator(
     withBackgrounds([ {
         default: true,
-        name: 'Silver Gray',
-        value: '#f6f6f6'
+        name: 'Fringy Flower',
+        value: '#c5b3e0'
     }, {
         name: 'white',
         value: '#ffffff'
