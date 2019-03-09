@@ -40,3 +40,9 @@
     font-weight: 700;
 }
 
+@mixin welcomeLogo {
+    color: $airForceBlue;
+    font-family: $roboto;
+    font-size: 99px;
+    font-weight: 700;
+}

@@ -1,8 +1,30 @@
 import React, { Component } from 'react';
 
 import NavigationHeader from '../../components/NavigationHeader';
+import NavigationLinkMenu from '../../components/NavigationLinkMenu';
 
 import styles from './styles.module.scss';
+
+const navigationMenuItems = [ {
+    id: 0,
+    label: 'nutrition',
+    to: '/'
+}, {
+    id: 1,
+    label: 'health',
+    to: '/'
+}, {
+    id: 2,
+    label: 'fashion & beauty',
+    to: '/'
+}, {
+    id: 3,
+    label: 'blog',
+    to: '/'
+} ];
+
+const navigationMenuTitle = 'crossfit';
+const messagesCount = 3;
 
 const userData = {
     userId: 'abc123',
@@ -10,7 +32,6 @@ const userData = {
     userRole: 'Sponsor/Requester'
 };
 
-const messagesCount = 3;
 
 class WelcomePage extends Component {
     render() {
@@ -27,6 +48,11 @@ class WelcomePage extends Component {
                 <NavigationHeader className={ styles.navigationHeader }
                     messagesCount={ messagesCount }
                     userName={ userName }
+                />
+
+                <NavigationLinkMenu className={ styles.navigationLinkMenu }
+                    items={ navigationMenuItems }
+                    title={ navigationMenuTitle }
                 />
             </div>
         );
