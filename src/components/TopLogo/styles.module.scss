@@ -1,0 +1,15 @@
+@import '../../styles/global.scss';
+
+.title {
+    @include topLogoTitle;
+
+    text-transform: uppercase;
+}
+
+.topLogo {
+    background: $topLogoBackgroundColor;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 50px 40px 0;
+    width: 280px;
+}

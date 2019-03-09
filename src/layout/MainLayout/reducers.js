@@ -6,17 +6,17 @@
 
 // export default (state = initialState, { type, data, error }) => {
 //     switch (type) {
-        // case '': {
-        //     return {
-        //         ...state,
-        //         isLoading: false,
-        //         data: {
-        //             ...state.data
-        //         }
-        //     };
-        // }
+// case '': {
+//     return {
+//         ...state,
+//         isLoading: false,
+//         data: {
+//             ...state.data
+//         }
+//     };
+// }
 
-        // default:
-        //     return state;
-    // }
+// default:
+//     return state;
+// }
 // };

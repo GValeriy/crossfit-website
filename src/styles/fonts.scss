@@ -1,3 +1,11 @@
-$arial: Arial;
-$roboto: Roboto;
+$robotoRegular: Roboto Regular;
+
+@font-face {
+    font-family: $robotoRegular;
+    src: url('/assets/fonts/Roboto/Roboto-Regular-webfont.ttf');
+}
+
+$sansSerif: sans-serif;
+$arial: Arial, $sansSerif;
+$roboto: Roboto Regular, $sansSerif;
 $segoeUI: Segoe UI;

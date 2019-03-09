@@ -1,4 +1,4 @@
-# Crossfit website
+# Crossfit Website
 
 ```
 npm install

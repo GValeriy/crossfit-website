@@ -33,6 +33,10 @@
       "error",
       "unix"
     ],
+    "no-unused-vars": [
+      0,
+      "always"
+    ],
     "object-curly-spacing": [
       "error",
       "always"

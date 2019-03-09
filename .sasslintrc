@@ -113,7 +113,7 @@
 
         "no-color-literals": 2,
 
-        "no-css-comments": 2,
+        "no-css-comments": 0,
 
         "no-debug": 2,
 
@@ -121,7 +121,7 @@
 
         "no-duplicate-properties": 2,
 
-        "no-empty-rulesets": 2,
+        "no-empty-rulesets": 0,
 
         "no-extends": 2,
 

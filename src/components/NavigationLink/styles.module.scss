@@ -1,0 +1,13 @@
+@import '../../styles/global.scss';
+
+.navigationLink {
+    @include regularSmallText;
+
+    color: $navigationLinkColor;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../styles/global.scss';
+
+.portfolioImage {
+    border: 1px solid $portfolioImageBorderColor;
+    border-radius: 50%;
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
+.portfolioImageWrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.messagesCount {
+    @include regularTinyText;
+
+    align-items: center;
+    background-color: $messagesCountBackgroundColor;
+    border-radius: 50%;
+    display: flex;
+    height: 27px;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(25%, -25%);
+    width: 27px;
+}

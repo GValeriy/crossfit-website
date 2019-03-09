@@ -1,0 +1,12 @@
+@import '../../styles/global.scss';
+
+.navigationLink {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.navigationLinkList {
+    display: flex;
+    flex-direction: column;
+}

@@ -7,8 +7,6 @@
 body {
     @include bodyText;
 
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     background-color: $backgroundColor;
     display: flex;
     flex-direction: column;

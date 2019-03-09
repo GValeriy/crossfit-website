@@ -12,3 +12,31 @@
     font-weight: 400;
 }
 
+@mixin regularSmallText {
+    color: $white;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@mixin regularSmallTitle {
+    color: $white;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@mixin regularTinyText {
+    color: $white;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin topLogoTitle {
+    @include regularMediumText;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+

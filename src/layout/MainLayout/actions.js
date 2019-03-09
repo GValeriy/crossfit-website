@@ -42,19 +42,19 @@
 //         type:
 //     });
 
-    // return ()
-    //     .then(data => {
-    //         dispatch({
-    //             type: ,
-    //             data
-    //         });
-    //     })
-    //     .catch(error => {
-    //         dispatch({
-    //             type: ,
-    //             error
-    //         });
-    //     });
+// return ()
+//     .then(data => {
+//         dispatch({
+//             type: ,
+//             data
+//         });
+//     })
+//     .catch(error => {
+//         dispatch({
+//             type: ,
+//             error
+//         });
+//     });
 // };
 
 // export default {

@@ -1,0 +1,34 @@
+@import '../../styles/global.scss';
+
+.icon {
+    margin-left: 80px;
+}
+
+.navigationHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolioImageLabel {
+    @include regularSmallText;
+
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+.portfolioImageUserName {
+    @include regularSmallTitle;
+    margin-left: 5px;
+}
+
+.portfolioImageWrapper {
+    align-items: center;
+    display: flex;
+    margin-right: 150px;
+}
+
+.topLogoContainer {
+    align-items: center;
+    display: flex;
+}
