@@ -12,6 +12,13 @@
     font-weight: 400;
 }
 
+@mixin regularMediumTitle {
+    color: $midnightExpress;
+    font-family: $roboto;
+    font-size: 27px;
+    font-weight: 700;
+}
+
 @mixin regularSmallText {
     color: $white;
     font-family: $roboto;

@@ -5,6 +5,14 @@
     margin-top: 100px;
 }
 
+.programHeadlineFooter {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
 .welcomePage {
-    display: block;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
 }

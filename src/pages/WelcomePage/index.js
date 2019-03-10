@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import NavigationHeader from '../../components/NavigationHeader';
 import NavigationLinkMenu from '../../components/NavigationLinkMenu';
+import ProgramHeadlineFooter from '../../components/ProgramHeadlineFooter';
 
 import styles from './styles.module.scss';
 
@@ -26,6 +27,20 @@ const navigationMenuItems = [ {
 const navigationMenuTitle = 'crossfit';
 const messagesCount = 3;
 
+const programHeadlines = [ {
+    id: 0,
+    text: 'hypertrophy',
+    title: 'goal'
+}, {
+    id: 1,
+    text: 'beginner',
+    title: 'skill lever'
+}, {
+    id: 2,
+    text: '28 days',
+    title: 'duration'
+} ];
+
 const userData = {
     userId: 'abc123',
     userName: 'Mary J. Sponsor',
@@ -44,14 +59,20 @@ class WelcomePage extends Component {
 
         return (
             <div className={ `${ styles.welcomePage } ${ className }` }>
-                <NavigationHeader className={ styles.navigationHeader }
-                    messagesCount={ messagesCount }
-                    userName={ userName }
-                />
+                <div>
+                    <NavigationHeader className={ styles.navigationHeader }
+                        messagesCount={ messagesCount }
+                        userName={ userName }
+                    />
 
-                <NavigationLinkMenu className={ styles.navigationLinkMenu }
-                    items={ navigationMenuItems }
-                    title={ navigationMenuTitle }
+                    <NavigationLinkMenu className={ styles.navigationLinkMenu }
+                        items={ navigationMenuItems }
+                        title={ navigationMenuTitle }
+                    />
+                </div>
+
+                <ProgramHeadlineFooter className={ styles.programHeadlineFooter }
+                    items={ programHeadlines }
                 />
             </div>
         );

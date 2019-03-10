@@ -1,0 +1,21 @@
+@import '../../styles/global.scss';
+
+.programHeadline {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    @include regularMediumTitle;
+
+    text-transform: uppercase;
+}
+
+
+.title {
+    @include regularSmallTitle;
+
+    color: $programHeadlineTitleColor;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
