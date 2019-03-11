@@ -1,18 +1,35 @@
 @import '../../styles/global.scss';
 
+.arrowIconToolbox {
+    margin-right: 100px;
+}
+
+.arrowIconToolboxWrapper {
+    align-items: center;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 60px;
+    z-index: 1;
+}
+
 .navigationLinkMenu {
-    margin-left: 150px;
-    margin-top: 100px;
+    margin-left: 80px;
+    margin-top: 40px;
 }
 
 .programHeadlineFooter {
-    align-self: flex-end;
-    justify-self: flex-end;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.socialIconsBar {
+    margin-left: 100px;
+    max-width: 160px;
 }
 
 .welcomePage {
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: space-between;
 }

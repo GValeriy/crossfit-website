@@ -1,0 +1,13 @@
+@import '../../styles/global.scss';
+
+.socialIcon {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.socialIconsBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

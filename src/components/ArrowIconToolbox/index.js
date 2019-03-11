@@ -8,14 +8,20 @@ import { ReactComponent as RightArrow } from '../../assets/icons/arrow_right.svg
 class ArrowIconToolbox extends PureComponent {
     render() {
         const {
-            className
+            className,
+            leftArrowDisabled,
+            rightArrowDisabled
         } = this.props;
 
         return (
             <div className={ `${ styles.arrowIconToolbox } ${ className }` }>
-                <LeftArrow className={ styles.leftIcon } />
+                <LeftArrow className={ styles.leftIcon }
+                    disabled={ leftArrowDisabled }
+                />
 
-                <RightArrow className={ styles.rightIcon } />
+                <RightArrow className={ styles.rightIcon }
+                    disabled={ rightArrowDisabled }
+                />
             </div>
         );
     }

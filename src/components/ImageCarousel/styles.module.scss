@@ -1,0 +1,12 @@
+@import '../../styles/global.scss';
+
+.imageCarousel {
+    position: absolute;
+    right: 0;
+    top: 210px;
+    z-index: 2;
+}
+
+.image {
+    max-width: 650px;
+}

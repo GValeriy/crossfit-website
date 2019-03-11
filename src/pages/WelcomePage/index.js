@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 
+import ArrowIconToolbox from '../../components/ArrowIconToolbox';
+import ImageCarousel from '../../components/ImageCarousel';
 import NavigationHeader from '../../components/NavigationHeader';
 import NavigationLinkMenu from '../../components/NavigationLinkMenu';
 import ProgramHeadlineFooter from '../../components/ProgramHeadlineFooter';
+import SocialIconsBar from '../../components/SocialIconsBar';
+import TitlePageLabel from '../../components/TitlePageLabel';
 
 import styles from './styles.module.scss';
 
@@ -41,6 +45,19 @@ const programHeadlines = [ {
     title: 'duration'
 } ];
 
+const socialIcons = [ {
+    id: 0,
+    name: 'share'
+}, {
+    id: 1,
+    name: 'facebook'
+}, {
+    id: 2,
+    name: 'instagram'
+} ];
+
+const titlePageLabel = 'crossfit program for beginners';
+
 const userData = {
     userId: 'abc123',
     userName: 'Mary J. Sponsor',
@@ -70,6 +87,20 @@ class WelcomePage extends Component {
                         title={ navigationMenuTitle }
                     />
                 </div>
+
+                <ImageCarousel />
+
+                <div className={ `${ styles.arrowIconToolboxWrapper } ${ className }` }>
+                    <ArrowIconToolbox className={ styles.arrowIconToolbox }
+                        leftArrowDisabled
+                    />
+
+                    <TitlePageLabel title={ titlePageLabel } />
+                </div>
+
+                <SocialIconsBar className={ styles.socialIconsBar }
+                    items={ socialIcons }
+                />
 
                 <ProgramHeadlineFooter className={ styles.programHeadlineFooter }
                     items={ programHeadlines }
