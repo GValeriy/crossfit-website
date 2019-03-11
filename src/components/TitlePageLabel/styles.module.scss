@@ -1,0 +1,15 @@
+@import '../../styles/global.scss';
+
+.title {
+    @include regularBigTitle;
+
+    text-transform: uppercase;
+    width: 400px;
+}
+
+.titlePageLabel {
+    background: $titlePageLabelBackgroundColor;
+    display: flex;
+    flex: .7;
+    padding: 65px 65px 50px;
+}
