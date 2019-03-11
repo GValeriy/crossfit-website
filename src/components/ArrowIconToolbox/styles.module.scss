@@ -1,0 +1,19 @@
+@import '../../styles/global.scss';
+
+.arrowIconToolbox {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.leftIcon {
+    &[disabled] {
+        opacity: 0.2;
+    }
+}
+
+.rightIcon {
+    &[disabled] {
+        opacity: 0.2;
+    }
+}

@@ -105,7 +105,7 @@
 
         "nesting-depth": 2,
 
-        "no-attribute-selectors": 2,
+        "no-attribute-selectors": 0,
 
         "no-color-hex": 0,
 
